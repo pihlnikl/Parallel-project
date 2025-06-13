@@ -15,7 +15,12 @@ making use of parallel generation should perform more efficiently than the simul
 using sequential generation.
 
 ## Linear Congruential Generator algorithm
-
+The formula for LCG is Xᵢ = (a * Xᵢ₋₁ + c) mod m  
+  
+a = multiplier (constant integer)  
+c = increment (constant integer, often 0)  
+m = modulus (constant integer, very large number, often prime number)  
+X₀ = seed number
 # Parameter choice
 The 3 most commonly used schools of parameter choices for LCG are (m prime, c = 0), (m a power of 2, c = 0) and (m a power of 2, c != 0).
 While (m a power of 2, c = 0) is a common choice because of its efficiency, I chose to go with the slower but more high quality randomness
@@ -23,11 +28,11 @@ providing (m prime, c = 0). A less efficient algorithm showcases the benefits of
 is more important than speed.
 
 I chose the specific values for the parameter semi-randomly, choosing a set of values from "Table 3. LCGs with good figures of merit and a(m − 1) < 2^53" (https://www.ams.org/journals/mcom/1999-68-225/S0025-5718-99-00996-5/S0025-5718-99-00996-5.pdf). 
-The chosen values are:
-**m** = 34359738337 (2^35 - 31)
-**a** = 258524
-**c** = 0
-**seed** = Chosen by built-in random number generator
+The chosen values are:  
+**m** = 34359738337 (2^35 - 31)  
+**a** = 258524  
+**c** = 0  
+**seed** = Chosen by built-in random number generator  
 
 # Results table
 ### Results table
