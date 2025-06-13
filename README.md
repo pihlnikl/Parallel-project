@@ -31,7 +31,7 @@ The chosen values are:
 
 # Results table
 ### Results table
-| Test Case | Numbers generated      | Sequential generation | 4 Parallel threads | 8 Parallel threads | Speedup 4 threads | Speedup 8 threads |
+| Test Case | Numbers generated      | Sequential generation (seconds) | 4 Parallel threads (seconds) | 8 Parallel threads (seconds) | Speedup 4 threads | Speedup 8 threads |
 |-----------|------------------------|-----------------------|--------------------|--------------------|-------------------|-------------------|
 | 0         | 100 000 000            | 0.003005              | 0.002285           | 0.0015555          | 1.31509x          | 1.93185x          |
 | 1         | 1 000 000 000          | 0.0302723             | 0.013881           | 0.0100172          | 2.1808×           | 3.02203×          |
